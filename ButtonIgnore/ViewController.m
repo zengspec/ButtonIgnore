@@ -25,6 +25,11 @@
     NSLog(@"......");
     
 }
+- (IBAction)yj_otherAction:(id)sender {
+    
+    NSLog(@"---------");
+    
+}
 
 
 - (void)didReceiveMemoryWarning {
