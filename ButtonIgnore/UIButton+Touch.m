@@ -42,6 +42,8 @@
             return;
         } else if (self.timeInterval > 0){
             [self performSelector:@selector(resetState) withObject:nil afterDelay:self.timeInterval];
+        } else {
+            [self performSelector:@selector(resetState) withObject:nil];
         }
     }
     self.ignoreEvent = YES;

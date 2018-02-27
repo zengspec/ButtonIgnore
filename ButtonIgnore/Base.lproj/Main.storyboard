@@ -25,19 +25,33 @@
                                     <constraint firstAttribute="height" constant="40" id="JuJ-pR-44x"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                <state key="normal" title="疯狂的点我啊！！！">
+                                <state key="normal" title="防重按钮">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="yj_clickAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LAv-XN-hgo"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fje-33-55l">
+                                <rect key="frame" x="100" y="437" width="175" height="40"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="无防重按钮">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="yj_otherAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="F72-eV-2Vx"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="T2w-PX-4zA" secondAttribute="bottom" constant="100" id="1br-i7-rb8"/>
+                            <constraint firstItem="T2w-PX-4zA" firstAttribute="trailing" secondItem="Fje-33-55l" secondAttribute="trailing" id="YXP-o4-urT"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="T2w-PX-4zA" secondAttribute="trailing" constant="100" id="gsY-zl-3gY"/>
+                            <constraint firstItem="T2w-PX-4zA" firstAttribute="top" secondItem="Fje-33-55l" secondAttribute="bottom" constant="50" id="h3K-kz-gYI"/>
+                            <constraint firstItem="T2w-PX-4zA" firstAttribute="height" secondItem="Fje-33-55l" secondAttribute="height" id="hlq-lI-uCW"/>
                             <constraint firstItem="T2w-PX-4zA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="jJy-ef-khY"/>
+                            <constraint firstItem="T2w-PX-4zA" firstAttribute="leading" secondItem="Fje-33-55l" secondAttribute="leading" id="y2J-cN-trY"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
